@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Hey You <3</title>
+<title>Hey You &lt;3</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Playfair+Display&display=swap" rel="stylesheet">
 
 <style>
 body {
     margin: 0;
     height: 100vh;
     overflow: hidden;
-     font-family: 'Special Elite', cursive;
+    font-family: 'Special Elite', cursive;
     background: linear-gradient(135deg, #ffe4ec, #fbeaff);
     display: flex;
     justify-content: center;
@@ -34,7 +34,7 @@ body {
 
 /* Headings */
 h1 {
-     font-family: 'Special Elite', cursive;
+    font-family: 'Special Elite', cursive;
     font-size: 36px;
     color: #a8434f;
     margin-bottom: 20px;
@@ -67,9 +67,6 @@ button {
     border: none;
     cursor: pointer;
     transition: 0.3s ease;
-}
-   
-button {
     font-family: 'Special Elite', cursive;
 }
 
@@ -132,7 +129,6 @@ button {
 </div>
 
 <script>
-<script>
 function yesClicked() {
     document.body.innerHTML = `
         <div style="
@@ -142,6 +138,7 @@ function yesClicked() {
             align-items:center;
             background: linear-gradient(135deg, #ffe4ec, #fbeaff);
             font-family: 'Special Elite', cursive;
+            text-align:center;
         ">
             <div style="
                 background: rgba(255,255,255,0.4);
@@ -151,6 +148,7 @@ function yesClicked() {
                 text-align: center;
                 box-shadow: 0 10px 30px rgba(0,0,0,0.1);
                 max-width: 400px;
+                width: 90%;
             ">
                 <h1 style="font-family:'Playfair Display', serif; color:#a8434f;">
                     It's a date 💖
@@ -161,15 +159,12 @@ function yesClicked() {
                 <p>⏰ 13:00</p>
 
                 <p style="margin-top:20px;">
-                    Ice cream, baby cows & good company 🐄🍦
+                    Ice cream, baby cows &amp; good company 🐄🍦
                 </p>
-
-                >
             </div>
         </div>
     `;
 }
-
 
 function moveButton() {
     const button = document.getElementById("noBtn");
