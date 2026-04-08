@@ -53,6 +53,28 @@ button {
     cursor: pointer;
     transition: 0.3s ease;
 }
+    <script>
+function moveButton(button) {
+    const box = document.getElementById("mainBox");
+    const boxRect = box.getBoundingClientRect();
+
+    button.style.position = "absolute";
+
+    const buttonWidth = button.offsetWidth;
+    const buttonHeight = button.offsetHeight;
+
+    const minX = boxRect.left;
+    const minY = boxRect.top;
+    const maxX = boxRect.right - buttonWidth;
+    const maxY = boxRect.bottom - buttonHeight;
+
+    const x = Math.random() * (maxX - minX) + minX;
+    const y = Math.random() * (maxY - minY) + minY;
+
+    button.style.left = x + "px";
+    button.style.top = y + "px";
+}
+</script>
 
 .yes {
     background: #ff6b81;
